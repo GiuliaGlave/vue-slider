@@ -85,7 +85,8 @@
         >
           <div
             class="col thumb"
-            v-for="slide in slides"
+            v-for="(slide, index) in slides"
+            @click="clickSlide(index)"
           >
             <img :src="'./' + slide.image" />
           </div>

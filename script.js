@@ -60,6 +60,12 @@ const app = createApp({
         this.activeSlide = this.slides.length - 1;
       }
     },
+
+    //creo il comando click e lo lego all'html con il @click sulle thumb e nel v-for aggiusto la sintassi per specificare index (  (slide, index) in slides)
+    clickSlide(i) {
+      //activeSlide acquisirà il valore dell'index cliccato
+      this.activeSlide = i;
+    },
   },
 });
 
